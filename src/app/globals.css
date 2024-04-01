@@ -18,16 +18,21 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  padding:20px;
+  max-width:960px;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .fleft{float:left; clear:none};
+  .fright{float:right; clear:none};
 }

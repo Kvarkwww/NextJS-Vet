@@ -1,0 +1,3 @@
+.fleft{float:left; clear:none; margin-right:20px;};
+.fright{float:right; clear:none; margin-right:20px; max-width:260px;};
+.boxed {max-width: 960px !important; padding-left:20px !important; padding-right: 20px !important};
