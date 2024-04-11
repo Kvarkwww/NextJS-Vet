@@ -38,21 +38,25 @@ const ZivaliPage = () => {
   }, []);
 
   return (
-    <div className="boxed">
+    <div className="container mt-5">
       <hr/>
       <h1>Živali</h1>
       <hr/>
       <AdvancedSearch onFilterChange={fetchZivali} />
       <hr/>
-      <table className="table">
-        <thead>
+      <table className="table table-striped table-bordered table-hover rounded">
+      <thead className="table-light">
           <tr>
             <th>Vzdevek</th>
             <th>Vrsta</th>
             <th>Pasma</th>
+            <th>Spol</th>
+            <th>Višina</th>
+            <th>Teža</th>
+            <th>Id</th>
             <th>Last. Ime</th>
             <th>Last. Priimek</th>
-            <th>Cepljenja</th>
+            <th>Cepljenja - Veljavno do</th>
           </tr>
         </thead>
         <tbody>
@@ -61,6 +65,10 @@ const ZivaliPage = () => {
               <td>{zival.attributes.Vzdevek}</td>
               <td>{zival.attributes.Vrsta}</td>
               <td>{zival.attributes.Pasma}</td>
+              <td>{zival.attributes.Spol}</td>
+              <td>{zival.attributes.Visina}</td>
+              <td>{zival.attributes.Teza}</td>
+              <td>{zival.attributes.Identifikacija}</td>
               <td>{zival.attributes.lastnik.data ? zival.attributes.lastnik.data.attributes.Ime : 'Ni podatkov'}</td>
               <td>{zival.attributes.lastnik.data ? zival.attributes.lastnik.data.attributes.Priimek : 'Ni podatkov'}</td>
               <td>

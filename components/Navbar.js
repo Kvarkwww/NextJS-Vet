@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -12,11 +13,10 @@ const Navbar = () => {
     router.push(`/iskanje?pojem=${searchTerm}`);
   };
   return (
-    <nav className="fright navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="container mt-5 fright navbar navbar-expand-lg navbar-light bg-light">
       <div className="fright container-fluid">
-        {/* Uporaba <Link> brez potrebe po dodatnem <a> znotraj */}
-        <Link href="/" passHref>
-          <div className="navbar-brand">Domov</div>
+        <Link href="/" className="navbar-brand" >
+            <Image src="/logo-vet.png" alt="Logotip" width={96} height={84} />
         </Link>
         <div className=" fright collapse navbar-collapse">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">

@@ -1,3 +1,12 @@
 .fleft{float:left; clear:none; margin-right:20px;};
 .fright{float:right; clear:none; margin-right:20px; max-width:260px;};
 .boxed {max-width: 960px !important; padding-left:20px !important; padding-right: 20px !important};
+.rounded {border-radius: 5px;}
+
+.footer {
+    margin-top: 120px;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px !important;
+    color: rgb(159, 159, 159)
+  }
