@@ -61,20 +61,20 @@ const ZivaliPage = () => {
           </tr>
         </thead>
         <tbody>
-          {zivali.map((zival) => (
-            <tr key={zival.id}>
-              <td>{zival.attributes.Vzdevek}</td>
-              <td>{zival.attributes.Vrsta}</td>
-              <td>{zival.attributes.Pasma}</td>
-              <td>{zival.attributes.Spol}</td>
-              <td>{zival.attributes.Visina}</td>
-              <td>{zival.attributes.Teza}</td>
-              <td>{zival.attributes.Identifikacija}</td>
-              <td>{zival.attributes.lastnik.data ? zival.attributes.lastnik.data.attributes.Ime : 'Ni podatkov'}</td>
-              <td>{zival.attributes.lastnik.data ? zival.attributes.lastnik.data.attributes.Priimek : 'Ni podatkov'}</td>
+          {zivali.map((zivali) => (
+            <tr key={zivali.id}>
+              <td>{zivali.attributes.Vzdevek}</td>
+              <td>{zivali.attributes.Vrsta}</td>
+              <td>{zivali.attributes.Pasma}</td>
+              <td>{zivali.attributes.Spol}</td>
+              <td>{zivali.attributes.Visina}</td>
+              <td>{zivali.attributes.Teza}</td>
+              <td>{zivali.attributes.Identifikacija}</td>
+              <td>{zivali.attributes.lastnik.data ? zivali.attributes.lastnik.data.attributes.Ime : 'Ni podatkov'}</td>
+              <td>{zivali.attributes.lastnik.data ? zivali.attributes.lastnik.data.attributes.Priimek : 'Ni podatkov'}</td>
               <td>
-                {zival.attributes.cepljenja.data.length > 0
-                  ? zival.attributes.cepljenja.data.map((cepivo) => (
+                {zivali.attributes.cepljenja.data.length > 0
+                  ? zivali.attributes.cepljenja.data.map((cepivo) => (
                       <div key={cepivo.id}>{cepivo.attributes.VrstaCepiva} - {new Date(cepivo.attributes.DatumCepljenja).toLocaleDateString()}</div>
                     ))
                   : 'Ni cepljenj'}
