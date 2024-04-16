@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { default as NextLink } from 'next/link';
 
 const ZivaliPage = () => {
-  const [zivali, setZivali] = useState([]);
+  const [zival, setZivali] = useState([]);
 
   const fetchZivali = async (filter: string, searchTerm: string, sortOrder: string) => {
     let baseUrl = `http://localhost:1337/api/zival`;
