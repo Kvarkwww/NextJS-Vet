@@ -1,5 +1,6 @@
 // Strani: pages/zivali.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import AdvancedSearch from '../components/AdvancedSearch'; // Predpostavimo, da imate to komponento
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { default as NextLink } from 'next/link';
@@ -61,7 +62,7 @@ const ZivaliPage = () => {
           </tr>
         </thead>
         <tbody>
-          {zival.map((zival) => (
+          {zivali.map((zival) => (
             <tr key={zival.id}>
               <td>{zival.attributes.Vzdevek}</td>
               <td>{zival.attributes.Vrsta}</td>
