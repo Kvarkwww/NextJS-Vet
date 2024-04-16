@@ -1,6 +1,25 @@
 import React, { useState } from 'react';
 import '../styles/globals.css'; 
 
+interface AdvancedSearchProps {
+  onFilterChange: (filterValue: string) => void; // Adjust the function type based on actual usage
+}
+
+const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onFilterChange }) => {
+  const [filter, setFilter] = useState<string>('vse');
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [sortOrder, setSortOrder] = useState<string>('asc');
+
+  // Implementation of your component...
+  return (
+      <div>
+          {/* Component JSX */}
+      </div>
+  );
+};
+
+export default AdvancedSearch;
+
 const AdvancedSearch = ({ onFilterChange }) => {
   const [filter, setFilter] = useState('vse');
   const [searchTerm, setSearchTerm] = useState('');
