@@ -61,7 +61,7 @@ const ZivaliPage = () => {
           </tr>
         </thead>
         <tbody>
-          {zivali.map((zival) => (
+          {zival.map((zival) => (
             <tr key={zival.id}>
               <td>{zival.attributes.Vzdevek}</td>
               <td>{zival.attributes.Vrsta}</td>
