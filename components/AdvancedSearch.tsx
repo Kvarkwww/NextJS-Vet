@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/globals.css'; 
 
 interface AdvancedSearchProps {
-  onFilterChange: (filterValue: string) => void; // Adjust the function type based on actual usage
+  onFilterChange: (filterValue: string, searchTerm: string, sortOrder: string) => void;
 }
 
 const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onFilterChange }) => {
@@ -10,37 +10,22 @@ const AdvancedSearch: React.FC<AdvancedSearchProps> = ({ onFilterChange }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [sortOrder, setSortOrder] = useState<string>('asc');
 
-  // Implementation of your component...
-  return (
-      <div>
-          {/* Component JSX */}
-      </div>
-  );
-};
-
-export default AdvancedSearch;
-
-const AdvancedSearch = ({ onFilterChange }) => {
-  const [filter, setFilter] = useState('vse');
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc');
-
-  const handleFilterChange = (e) => {
-    const newFilter = e.target.value;
-    setFilter(newFilter);
-    onFilterChange(newFilter, searchTerm, sortOrder);
+  const handleFilterChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      const newFilter = e.target.value;
+      setFilter(newFilter);
+      onFilterChange(newFilter, searchTerm, sortOrder);
   };
 
-  const handleSearchTermChange = (e) => {
-    const newSearchTerm = e.target.value;
-    setSearchTerm(newSearchTerm);
-    onFilterChange(filter, newSearchTerm, sortOrder);
+  const handleSearchTermChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const newSearchTerm = e.target.value;
+      setSearchTerm(newSearchTerm);
+      onFilterChange(filter, newSearchTerm, sortOrder);
   };
 
-  const handleSortOrderChange = (e) => {
-    const newSortOrder = e.target.value;
-    setSortOrder(newSortOrder);
-    onFilterChange(filter, searchTerm, newSortOrder);
+  const handleSortOrderChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      const newSortOrder = e.target.value;
+      setSortOrder(newSortOrder);
+      onFilterChange(filter, searchTerm, newSortOrder);
   };
 
   return (
