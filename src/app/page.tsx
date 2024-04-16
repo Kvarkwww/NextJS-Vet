@@ -9,7 +9,7 @@ export default function Home() {
         (Database Design & Development )
         </p>
         <div className="fixed bottom-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
+          <link
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://kvark.si"
             target="_blank"
@@ -24,10 +24,10 @@ export default function Home() {
               height={40}
               priority
             />
-          </a>
+          </link>
         </div>
       </div>
-        <a
+        <link
         href="https://strapi.io/"
         className="border-transparent"
         target="_blank"
@@ -43,9 +43,9 @@ export default function Home() {
           priority
         />
       </div>
-      </a>
+      </link>
       <div><h1>&</h1></div>
-      <a
+      <link
           href="https://nextjs.org/"
           className="group border-transparent"
           target=""
@@ -61,9 +61,9 @@ export default function Home() {
           priority
         />
       </div>
-      </a>
+      </link>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
+        <link
           href="/zivali"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target=""
@@ -78,9 +78,9 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Podatki živali in cepljenj
           </p>
-        </a>
+        </link>
 
-        <a
+        <link
           href="/lastniki"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target=""
@@ -95,8 +95,8 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Podatki lastnikov živali.
           </p>
-        </a>
-        <a
+        </link>
+        <link
           href="/cepljenja"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target=""
@@ -111,8 +111,8 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Baza cepljenj.
           </p>
-        </a>
-        <a
+        </link>
+        <link
           href="http://localhost:1337/admin/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target=""
@@ -127,7 +127,7 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Urejanje baze podatkov.
           </p>
-        </a>
+        </link>
       </div>
     </main>
   );
