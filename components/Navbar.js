@@ -15,26 +15,26 @@ const Navbar = () => {
   return (
     <nav className="container mt-5 fright navbar navbar-expand-lg navbar-light bg-light">
       <div className="fright container-fluid">
-        <Link href="/" className="navbar-brand" >
+        <NextLink href="/" className="navbar-brand" >
             <Image src="/logo-vet.png" alt="Logotip" width={96} height={84} />
-        </Link>
+        </NextLink>
         <div className=" fright collapse navbar-collapse">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               {/* Pravilna uporaba <Link> s passHref */}
-              <Link href="/zivali" passHref>
+              <NextLink href="/zivali" passHref>
                 <div className="nav-link">Živali</div>
-              </Link>
+              </NextLink>
             </li>
             <li className="nav-item">
-              <Link href="/lastniki" passHref>
+              <NextLink href="/lastniki" passHref>
                 <div className="nav-link">Lastniki</div>
-              </Link>
+              </NextLink>
             </li>
             <li className="nav-item">
-              <Link href="/cepljenja" passHref>
+              <NextLink href="/cepljenja" passHref>
                 <div className="nav-link">Cepljenja</div>
-              </Link>
+              </NextLink>
             </li>
             {/* Dodate lahko še več povezav po potrebi */}
           </ul>
