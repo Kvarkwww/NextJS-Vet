@@ -1,6 +1,7 @@
 // pages/animals.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { default as NextLink } from 'next/link';
 
 export async function getServerSideProps() {
   // Zamenjajte URL z dejanskim endpointom vašega Strapi API-ja

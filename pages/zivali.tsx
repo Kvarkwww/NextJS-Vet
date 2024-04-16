@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import AdvancedSearch from '../components/AdvancedSearch'; // Predpostavimo, da imate to komponento
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { default as NextLink } from 'next/link';
 
 const ZivaliPage = () => {
   const [zivali, setZivali] = useState([]);

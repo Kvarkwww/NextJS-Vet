@@ -1,5 +1,6 @@
 // pages/iskanje.js
 import { useRouter } from 'next/router';
+import { default as NextLink } from 'next/link';
 
 export default function Iskanje() {
   const router = useRouter();
