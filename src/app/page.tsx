@@ -114,7 +114,7 @@ export default function Home() {
           </p>
         </NextLink>
         <NextLink
-          href="http://vet.vz.kvarkdev:1337/admin/"
+          href="http://vet.vz.kvarkdev.eu:1337/admin/"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target=""
           rel="noopener noreferrer"
