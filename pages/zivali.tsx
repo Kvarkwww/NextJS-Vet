@@ -9,7 +9,7 @@ const ZivaliPage = () => {
   const [zivali, setZivali] = useState([]);
 
   const fetchZivali = async (filter: string, searchTerm: string, sortOrder: string) => {
-    let baseUrl = `http://localhost:1337/api/zival`;
+    let baseUrl = `http://vet.vz.kvarkdev.eu:1337/api/zival`;
     let queryParams = `populate[lastnik]=*&populate[cepljenja]=*`;
   
     if (filter !== 'vse' && searchTerm) {
